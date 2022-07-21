@@ -10,7 +10,7 @@ PyTorch Implementation of paper:
 
 ## Updates
 
-* We released the **uncleaned** code to meet ECCV requirements, i.e. the code presented before the camera ready DDL. The cleaned up code will be provided asap.
+* We released the **uncleaned** code to meet ECCV requirements, i.e. the code should be presented before the camera ready DDL. The cleaned up code will be provided asap.
 
   
 
@@ -23,6 +23,7 @@ PyTorch Implementation of paper:
 ## Pre-training
 
 ```bash
+# 64 V100 GPUs required
 master_addr=127.0.0.3
 master_port=29502
 model=howto
