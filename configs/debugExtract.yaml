@@ -1,0 +1,44 @@
+MODEL:
+  WEIGHT: ""
+  ARCHITECTURE: "CLIP"
+  CLIP:
+    NUM_CLIPS: 64
+    FEATPOOL:
+      INPUT_SIZE: 4096
+      HIDDEN_SIZE: 512
+      KERNEL_SIZE: 4
+    VIDEOEMBED:
+      PRETRAIN: False
+      TRAINABLE: True
+    TEXTEMBED:
+      PRETRAIN: True
+      TRAINABLE: False
+    FEAT2D:
+      POOLING_COUNTS: [15,8,8]
+    INTEGRATOR:
+      QUERY_HIDDEN_SIZE: 512
+      LSTM:
+        NUM_LAYERS: 3
+        BIDIRECTIONAL: False
+    PREDICTOR:
+      HIDDEN_SIZE: 512
+      KERNEL_SIZE: 9
+      NUM_STACK_LAYERS: 4
+    LOSS:
+      MIN_IOU: 0.5
+      MAX_IOU: 1.0
+DATASETS:
+  TRAIN: ("activitynet_train", "activitynet_val")
+  TEST: ("activitynet_test",)
+INPUT:
+  NUM_SEGMENTS: 1
+  FRAMES_PER_SEGMENT: 16
+DATALOADER:
+  NUM_WORKERS: 0
+SOLVER:
+  LR: 0.0005
+  BATCH_SIZE: 4
+  MILESTONES: (3, 4)
+  MAX_EPOCH: 30
+TEST:
+  NMS_THRESH: 0.5
