@@ -7,17 +7,21 @@ PyTorch Implementation of paper:
 > Meng Cao, Tianyu Yang, Junwu Weng, Can Zhang, Jue Wang and Yuexian Zou\*.
 
 
+
 ## Updates
 
 * We released the **uncleaned** code to meet ECCV requirements, i.e. the code presented before the camera ready DDL. The cleaned up code will be provided asap.
+
+  
 
 ## Data Preparation
 
 * Download [HowTo100M](https://www.di.ens.fr/willow/research/howto100m/) and put them in the 'datasets/howto' directory.
 
+
+
 ## Pre-training
 
-~~~markdown
 ```bash
 master_addr=127.0.0.3
 master_port=29502
@@ -44,7 +48,8 @@ MODEL.CLIP.LOSS.FGWEIGHT 10 \
 MODEL.CLIP.LOSS.FGPOSWEIGHT 1000 \
 SOLVER.LR 0.001
 ```
-~~~
+
+
 
 ## Feature Extractor
 
@@ -89,6 +94,7 @@ Python concatHDF5.py
   - [x] C3D
   - [ ] S3D
   - [ ] ViT + TimesFormer
+- [ ] Downstream task support
 ```
 
 ### 
