@@ -113,4 +113,11 @@ Please **[★star]** this repo and **[cite]** the following paper if you feel ou
     booktitle = {European Conference on Computer Vision},
     year      = {2022}
 }
+
+@article{cao2022locvtp,
+  title={LocVTP: Video-Text Pre-training for Temporal Localization},
+  author={Cao, Meng and Yang, Tianyu and Weng, Junwu and Zhang, Can and Wang, Jue and Zou, Yuexian},
+  journal={arXiv preprint arXiv:2207.10362},
+  year={2022}
+}
 ```
