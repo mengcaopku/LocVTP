@@ -104,10 +104,10 @@ Python concatHDF5.py
 
 ### Citation
 
-Please **[★star]** this repo and **[cite]** the following paper if you feel our PAL useful to your research:
+Please **[★star]** this repo and **[cite]** the following paper if you feel our work useful to your research:
 
 ```
-@inproceedings{cao2022loc,
+@inproceedings{cao2022locvtp,
     title     = {LocVTP: Video-Text Pre-training for Temporal Localization},
     author    = {Cao, Meng and Yang, Tianyu and Weng, Junwu and Zhang, Can and Wang, Jue and Zou, Yuexian},
     booktitle = {European Conference on Computer Vision},
